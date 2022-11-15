@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
+{% extends 'base.html' %}
+{% block title %}Create page{% endblock %}
+{% block content %}
 <body>
-$END$
+
+<h1>Create Stuf</h1>
+
+<form action="" method="post">
+{% include 'partial/form.html' %}
+    <input type="submit" value="Create"/>
+</form>
 </body>
-</html>
+{% endblock %}
